@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  rabbitmq:
+    image: rabbitmq:3.11-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  worker_a:
+    build: .
+    depends_on:
+      - rabbitmq
+    environment:
+      - DRAMATIQ_BROKER_URL=amqp://guest:guest@rabbitmq:5672//
+    command: ["python", "worker_a.py"]
+
+  worker_b:
+    build: .
+    depends_on:
+      - rabbitmq
+    environment:
+      - DRAMATIQ_BROKER_URL=amqp://guest:guest@rabbitmq:5672//
+    command: ["python", "worker_b.py"]
+
+  producer_once:
+    build: .
+    depends_on:
+      - rabbitmq
+    environment:
+      - DRAMATIQ_BROKER_URL=amqp://guest:guest@rabbitmq:5672//
+    command: ["python", "producer.py"]
+    # run once and exit
+    restart: "no"

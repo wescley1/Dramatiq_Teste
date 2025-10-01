@@ -1,8 +1,17 @@
 try:
     import dramatiq
-    from dramatiq.rabbitmq import RabbitmqBroker
 except Exception:  # pragma: no cover - optional dependency in tests
     dramatiq = None
+
+try:
+    # Try first location
+    from dramatiq.rabbitmq import RabbitmqBroker
+except Exception:
+    try:
+        # Some older/newer versions expose under dramatiq.brokers.rabbitmq
+        from dramatiq.brokers.rabbitmq import RabbitmqBroker
+    except Exception:
+        RabbitmqBroker = None
 
 import os
 import time
@@ -10,9 +19,13 @@ import time
 # Read broker URL from env for flexibility in dev/prod.
 BROKER_URL = os.environ.get("DRAMATIQ_BROKER_URL", "amqp://guest:guest@localhost:5672//")
 
-if dramatiq is not None:
+if dramatiq is not None and RabbitmqBroker is not None:
     broker = RabbitmqBroker(url=BROKER_URL)
     dramatiq.set_broker(broker)
+else:
+    # If dramatiq is present but RabbitmqBroker isn't, we still allow actors to
+    # be created (they will error when trying to send if broker is not configured).
+    broker = None
 
 
 def do_quick(name: str) -> None:
@@ -30,8 +43,9 @@ def do_slow(name: str, duration: float = 2.0) -> None:
 
 
 if dramatiq is not None:
-    # Dramatiq actors wrapping the pure functions. These are the objects the
-    # workers will consume and the producer will send messages to.
+    # Create actors that wrap the pure functions. If the broker was not
+    # configured because RabbitmqBroker wasn't available, sending will fail at
+    # runtime; that's intentional to surface configuration issues.
     quick_task = dramatiq.actor(do_quick)
     slow_task = dramatiq.actor(do_slow)
 else:  # Provide placeholders so importing doesn't fail in minimal test env
