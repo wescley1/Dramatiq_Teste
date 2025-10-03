@@ -1,0 +1,305 @@
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.215861+00:00 [notice] <0.44.0> Application syslog exited with reason: stopped
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.223679+00:00 [notice] <0.230.0> Logging: switching to configured handler(s); following messages may not be visible in this log output
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.239137+00:00 [notice] <0.230.0> Logging: configured log handlers are now ACTIVE
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,559 DEBUG dramatiq.worker._WorkerMiddleware Adding consumer for queue 'default'.
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,545 DEBUG dramatiq.worker._WorkerMiddleware Adding consumer for queue 'default'.
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,560 DEBUG dramatiq.worker.ConsumerThread(default) Running consumer thread...
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,546 DEBUG dramatiq.worker.ConsumerThread(default) Running consumer thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,561 DEBUG pika.adapters.select_connection Using EPollPoller
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,547 DEBUG pika.adapters.select_connection Using EPollPoller
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,562 DEBUG dramatiq.worker._WorkerMiddleware Adding consumer for delay queue 'default.DQ'.
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,547 DEBUG dramatiq.worker._WorkerMiddleware Adding consumer for delay queue 'default.DQ'.
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,564 DEBUG pika.adapters.base_connection Created default connection workflow <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x77b47747a150>
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,564 DEBUG pika.adapters.utils.connection_workflow Starting AMQP Connection workflow asynchronously.
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,548 DEBUG dramatiq.worker.ConsumerThread(default.DQ) Running consumer thread...
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,548 DEBUG pika.adapters.select_connection Using EPollPoller
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,564 DEBUG pika.adapters.select_connection call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x77b4783c5bd0> with deadline=250.342794517 and callback=functools.partial(<bound method AMQPConnectionWorkflow._start_new_cycle_async of <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x77b47747a150>>, first=True); now=250.342794517; delay=0
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,564 DEBUG pika.adapters.utils.connection_workflow Beginning a new AMQP connection workflow cycle; attempts remaining after this: 0
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,548 DEBUG pika.adapters.base_connection Created default connection workflow <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x7d3965bb2db0>
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,549 DEBUG pika.adapters.utils.connection_workflow Starting AMQP Connection workflow asynchronously.
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,549 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,549 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_a-1       | 2025-10-01 04:09:09,549 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,565 DEBUG pika.adapters.select_connection call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x77b4779cb3a0> with deadline=250.34292198 and callback=<bound method AMQPConnectionWorkflow._try_next_config_async of <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x77b47747a150>>; now=250.34292198; delay=0
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,565 DEBUG pika.adapters.utils.connection_workflow _try_next_config_async: 'rabbitmq':5672
+2025-10-01 01:09:09 worker_a-1       | DEBUG: DRAMATIQ_BROKER_URL= amqp://guest:guest@rabbitmq:5672//
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,566 DEBUG dramatiq.worker.ConsumerThread(default.DQ) Running consumer thread...
+2025-10-01 01:09:09 worker_a-1       | DEBUG: broker= <dramatiq.brokers.rabbitmq.RabbitmqBroker object at 0x7d3965ed0f20>
+2025-10-01 01:09:09 worker_a-1       | Starting worker A (pid=1)...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,566 DEBUG pika.adapters.select_connection Using EPollPoller
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,569 DEBUG pika.adapters.base_connection Created default connection workflow <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x77b47747b050>
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,571 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,576 DEBUG pika.adapters.select_connection process_timeouts: invoking callback=<bound method _AddressResolver._dispatch_result of <pika.adapters.utils.selector_ioloop_adapter._AddressResolver object at 0x77b4786a39b0>>
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,577 DEBUG pika.adapters.utils.selector_ioloop_adapter Invoking asynchronous getaddrinfo() completion callback; host='rabbitmq'
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,577 DEBUG pika.adapters.utils.connection_workflow getaddrinfo returned 1 records
+2025-10-01 01:09:09 worker_b-1       | DEBUG: DRAMATIQ_BROKER_URL= amqp://guest:guest@rabbitmq:5672//
+2025-10-01 01:09:09 worker_b-1       | DEBUG: broker= <dramatiq.brokers.rabbitmq.RabbitmqBroker object at 0x77b477581490>
+2025-10-01 01:09:09 worker_b-1       | Starting worker B (pid=1)...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,578 DEBUG pika.adapters.utils.connection_workflow Attempting to connect using address record (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('172.19.0.2', 5672))
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,573 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,578 INFO pika.adapters.utils.connection_workflow Pika version 1.3.1 connecting to ('172.19.0.2', 5672)
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,578 DEBUG pika.adapters.select_connection add_callback_threadsafe: added callback=<bound method _AsyncSocketConnector._start_async of <pika.adapters.utils.io_services_utils._AsyncSocketConnector object at 0x77b4786a0b30>>
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,571 DEBUG pika.adapters.utils.connection_workflow Starting AMQP Connection workflow asynchronously.
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,572 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,577 DEBUG pika.adapters.select_connection add_callback_threadsafe: added callback=<bound method _AddressResolver._dispatch_result of <pika.adapters.utils.selector_ioloop_adapter._AddressResolver object at 0x77b4786a39b0>>
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,577 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,572 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,578 DEBUG pika.adapters.select_connection call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x77b4786a0ac0> with deadline=260.356588559 and callback=<bound method AMQPConnector._on_tcp_connection_timeout of <pika.adapters.utils.connection_workflow.AMQPConnector object at 0x77b4783c4050>>; now=250.356588559; delay=10.0
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,575 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,580 DEBUG pika.adapters.select_connection call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x77b47873b970> with deadline=265.35877813499997 and callback=<bound method AMQPConnector._on_overall_timeout of <pika.adapters.utils.connection_workflow.AMQPConnector object at 0x77b4783c4050>>; now=250.358778135; delay=15.0
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,576 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,573 DEBUG dramatiq.worker.WorkerThread Running worker thread...
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,580 DEBUG pika.adapters.select_connection call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x77b4786a0df0> with deadline=250.358313768 and callback=functools.partial(<bound method AMQPConnectionWorkflow._start_new_cycle_async of <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x77b47747b050>>, first=True); now=250.358313768; delay=0
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,582 DEBUG pika.adapters.utils.connection_workflow Beginning a new AMQP connection workflow cycle; attempts remaining after this: 0
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,583 DEBUG pika.adapters.select_connection call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x77b4786a0dc0> with deadline=250.360915668 and callback=<bound method AMQPConnectionWorkflow._try_next_config_async of <pika.adapters.utils.connection_workflow.AMQPConnectionWorkflow object at 0x77b47747b050>>; now=250.360915668; delay=0
+2025-10-01 01:09:09 worker_b-1       | 2025-10-01 04:09:09,583 DEBUG pika.adapters.utils.connection_workflow _try_next_config_async: 'rabbitmq':5672
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.598568+00:00 [info] <0.230.0> ra: starting system quorum_queues
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.598653+00:00 [info] <0.230.0> starting Ra system: quorum_queues in directory: /var/lib/rabbitmq/mnesia/rabbit@ad96121a9ade/quorum/rabbit@ad96121a9ade
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.664339+00:00 [info] <0.266.0> ra system 'quorum_queues' running pre init for 0 registered servers
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.675714+00:00 [info] <0.267.0> ra: meta data store initialised for system quorum_queues. 0 record(s) recovered
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.691896+00:00 [notice] <0.272.0> WAL: ra_log_wal init, open tbls: ra_log_open_mem_tables, closed tbls: ra_log_closed_mem_tables
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.704334+00:00 [info] <0.230.0> ra: starting system coordination
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.704404+00:00 [info] <0.230.0> starting Ra system: coordination in directory: /var/lib/rabbitmq/mnesia/rabbit@ad96121a9ade/coordination/rabbit@ad96121a9ade
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.706753+00:00 [info] <0.279.0> ra system 'coordination' running pre init for 0 registered servers
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.707935+00:00 [info] <0.280.0> ra: meta data store initialised for system coordination. 0 record(s) recovered
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.708228+00:00 [notice] <0.285.0> WAL: ra_coordination_log_wal init, open tbls: ra_coordination_log_open_mem_tables, closed tbls: ra_coordination_log_closed_mem_tables
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.712326+00:00 [info] <0.230.0> 
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.712326+00:00 [info] <0.230.0>  Starting RabbitMQ 3.11.28 on Erlang 25.3.2.9 [jit]
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.712326+00:00 [info] <0.230.0>  Copyright (c) 2007-2023 Broadcom Inc and/or its subsidiaries
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.712326+00:00 [info] <0.230.0>  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+2025-10-01 01:09:12 rabbitmq-1       | 
+2025-10-01 01:09:12 rabbitmq-1       |   ##  ##      RabbitMQ 3.11.28
+2025-10-01 01:09:12 rabbitmq-1       |   ##  ##
+2025-10-01 01:09:12 rabbitmq-1       |   ##########  Copyright (c) 2007-2023 Broadcom Inc and/or its subsidiaries
+2025-10-01 01:09:12 rabbitmq-1       |   ######  ##
+2025-10-01 01:09:12 rabbitmq-1       |   ##########  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+2025-10-01 01:09:12 rabbitmq-1       | 
+2025-10-01 01:09:12 rabbitmq-1       |   Erlang:      25.3.2.9 [jit]
+2025-10-01 01:09:12 rabbitmq-1       |   TLS Library: OpenSSL - OpenSSL 3.1.5 30 Jan 2024
+2025-10-01 01:09:12 rabbitmq-1       |   Release series support status: supported
+2025-10-01 01:09:12 rabbitmq-1       | 
+2025-10-01 01:09:12 rabbitmq-1       |   Doc guides:  https://rabbitmq.com/documentation.html
+2025-10-01 01:09:12 rabbitmq-1       |   Support:     https://rabbitmq.com/contact.html
+2025-10-01 01:09:12 rabbitmq-1       |   Tutorials:   https://rabbitmq.com/getstarted.html
+2025-10-01 01:09:12 rabbitmq-1       |   Monitoring:  https://rabbitmq.com/monitoring.html
+2025-10-01 01:09:12 rabbitmq-1       | 
+2025-10-01 01:09:12 rabbitmq-1       |   Logs: /var/log/rabbitmq/rabbit@ad96121a9ade_upgrade.log
+2025-10-01 01:09:12 rabbitmq-1       |         <stdout>
+2025-10-01 01:09:12 rabbitmq-1       | 
+2025-10-01 01:09:12 rabbitmq-1       |   Config file(s): /etc/rabbitmq/conf.d/10-defaults.conf
+2025-10-01 01:09:12 rabbitmq-1       | 
+2025-10-01 01:09:12 rabbitmq-1       |   Starting broker...2025-10-01 04:09:12.714321+00:00 [info] <0.230.0> 
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.714321+00:00 [info] <0.230.0>  node           : rabbit@ad96121a9ade
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.714321+00:00 [info] <0.230.0>  home dir       : /var/lib/rabbitmq
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.714321+00:00 [info] <0.230.0>  config file(s) : /etc/rabbitmq/conf.d/10-defaults.conf
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.714321+00:00 [info] <0.230.0>  cookie hash    : NSEUarhSO8WeoBsIXgbzrQ==
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.714321+00:00 [info] <0.230.0>  log(s)         : /var/log/rabbitmq/rabbit@ad96121a9ade_upgrade.log
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.714321+00:00 [info] <0.230.0>                 : <stdout>
+2025-10-01 01:09:12 rabbitmq-1       | 2025-10-01 04:09:12.714321+00:00 [info] <0.230.0>  database dir   : /var/lib/rabbitmq/mnesia/rabbit@ad96121a9ade
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.744316+00:00 [info] <0.230.0> Running boot step pre_boot defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.744385+00:00 [info] <0.230.0> Running boot step rabbit_global_counters defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.744630+00:00 [info] <0.230.0> Running boot step rabbit_osiris_metrics defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.744744+00:00 [info] <0.230.0> Running boot step rabbit_core_metrics defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.745224+00:00 [info] <0.230.0> Running boot step rabbit_alarm defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.749574+00:00 [info] <0.300.0> Memory high watermark set to 9597 MiB (10063275622 bytes) of 23992 MiB (25158189056 bytes) total
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.752484+00:00 [info] <0.302.0> Enabling free disk space monitoring (disk free space: 1001701126144, total memory: 25158189056)
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.752544+00:00 [info] <0.302.0> Disk free limit set to 50MB
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.754925+00:00 [info] <0.230.0> Running boot step code_server_cache defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.755054+00:00 [info] <0.230.0> Running boot step file_handle_cache defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.755808+00:00 [info] <0.305.0> Limiting to approx 1048479 file handles (943629 sockets)
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.756478+00:00 [info] <0.306.0> FHC read buffering: OFF
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.756593+00:00 [info] <0.306.0> FHC write buffering: ON
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.758376+00:00 [info] <0.230.0> Running boot step worker_pool defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.758516+00:00 [info] <0.287.0> Will use 6 processes for default worker pool
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.758566+00:00 [info] <0.287.0> Starting worker pool 'worker_pool' with 6 processes in it
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.759083+00:00 [info] <0.230.0> Running boot step database defined by app rabbit
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.759483+00:00 [info] <0.230.0> Node database directory at /var/lib/rabbitmq/mnesia/rabbit@ad96121a9ade is empty. Assuming we need to join an existing cluster or initialise from scratch...
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.759671+00:00 [info] <0.230.0> Configured peer discovery backend: rabbit_peer_discovery_classic_config
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.759754+00:00 [info] <0.230.0> Will try to lock with peer discovery backend rabbit_peer_discovery_classic_config
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.759874+00:00 [info] <0.230.0> All discovered existing cluster peers:
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.759901+00:00 [info] <0.230.0> Discovered no peer nodes to cluster with. Some discovery backends can filter nodes out based on a readiness criteria. Enabling debug logging might help troubleshoot.
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.761610+00:00 [notice] <0.44.0> Application mnesia exited with reason: stopped
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.941092+00:00 [info] <0.230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.941291+00:00 [info] <0.230.0> Successfully synced tables from a peer
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.954981+00:00 [info] <0.230.0> Feature flags: `feature_flags_v2`: supported, attempt to enable...
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.975275+00:00 [notice] <0.288.0> Feature flags: attempt to enable `classic_mirrored_queue_version`...
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.996986+00:00 [notice] <0.288.0> Feature flags: `classic_mirrored_queue_version` enabled
+2025-10-01 01:09:15 rabbitmq-1       | 2025-10-01 04:09:15.997374+00:00 [notice] <0.288.0> Feature flags: attempt to enable `classic_queue_type_delivery_support`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.008313+00:00 [notice] <0.288.0> Feature flags: attempt to enable `stream_queue`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.033601+00:00 [notice] <0.288.0> Feature flags: `stream_queue` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.046018+00:00 [notice] <0.288.0> Feature flags: `classic_queue_type_delivery_support` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.046464+00:00 [notice] <0.288.0> Feature flags: attempt to enable `direct_exchange_routing_v2`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.055767+00:00 [info] <0.501.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.055902+00:00 [info] <0.501.0> Successfully synced tables from a peer
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.076789+00:00 [notice] <0.288.0> Feature flags: `direct_exchange_routing_v2` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.077182+00:00 [notice] <0.288.0> Feature flags: attempt to enable `drop_unroutable_metric`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.098235+00:00 [notice] <0.288.0> Feature flags: `drop_unroutable_metric` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.098583+00:00 [notice] <0.288.0> Feature flags: attempt to enable `empty_basic_get_metric`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.120583+00:00 [notice] <0.288.0> Feature flags: `empty_basic_get_metric` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.121354+00:00 [notice] <0.288.0> Feature flags: attempt to enable `listener_records_in_ets`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.166529+00:00 [notice] <0.288.0> Feature flags: `listener_records_in_ets` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.167663+00:00 [notice] <0.288.0> Feature flags: attempt to enable `stream_sac_coordinator_unblock_group`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.178304+00:00 [notice] <0.288.0> Feature flags: attempt to enable `stream_single_active_consumer`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.200637+00:00 [notice] <0.288.0> Feature flags: `stream_single_active_consumer` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.212365+00:00 [notice] <0.288.0> Feature flags: `stream_sac_coordinator_unblock_group` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.213080+00:00 [notice] <0.288.0> Feature flags: attempt to enable `tracking_records_in_ets`...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.233725+00:00 [notice] <0.288.0> Feature flags: `tracking_records_in_ets` enabled
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.234294+00:00 [info] <0.230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.234410+00:00 [info] <0.230.0> Successfully synced tables from a peer
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.248557+00:00 [info] <0.230.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.248739+00:00 [info] <0.230.0> Successfully synced tables from a peer
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.248774+00:00 [info] <0.230.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.248891+00:00 [info] <0.230.0> Will try to unlock with peer discovery backend rabbit_peer_discovery_classic_config
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.249305+00:00 [info] <0.230.0> Running boot step tracking_metadata_store defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.249880+00:00 [info] <0.634.0> Setting up a table for connection tracking on this node: tracked_connection
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.250204+00:00 [info] <0.634.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.250378+00:00 [info] <0.634.0> Setting up a table for per-user connection counting on this node: tracked_connection_per_user
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.250475+00:00 [info] <0.634.0> Setting up a table for channel tracking on this node: tracked_channel
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.250549+00:00 [info] <0.634.0> Setting up a table for channel tracking on this node: tracked_channel_per_user
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.250856+00:00 [info] <0.230.0> Running boot step networking_metadata_store defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.251385+00:00 [info] <0.230.0> Running boot step database_sync defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.251893+00:00 [info] <0.230.0> Running boot step feature_flags defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252064+00:00 [info] <0.230.0> Running boot step codec_correctness_check defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252094+00:00 [info] <0.230.0> Running boot step external_infrastructure defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252157+00:00 [info] <0.230.0> Running boot step rabbit_event defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252269+00:00 [info] <0.230.0> Running boot step rabbit_registry defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252373+00:00 [info] <0.230.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252450+00:00 [info] <0.230.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252518+00:00 [info] <0.230.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252588+00:00 [info] <0.230.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252678+00:00 [info] <0.230.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252781+00:00 [info] <0.230.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.252946+00:00 [info] <0.230.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.253057+00:00 [info] <0.230.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.253168+00:00 [info] <0.230.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.253290+00:00 [info] <0.230.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.253474+00:00 [info] <0.230.0> Running boot step rabbit_priority_queue defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.253733+00:00 [info] <0.230.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.254424+00:00 [info] <0.230.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.254568+00:00 [info] <0.230.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.254648+00:00 [info] <0.230.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.254707+00:00 [info] <0.230.0> Running boot step kernel_ready defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.254734+00:00 [info] <0.230.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.254925+00:00 [info] <0.230.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.255793+00:00 [info] <0.643.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.255949+00:00 [info] <0.230.0> Running boot step guid_generator defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.259287+00:00 [info] <0.230.0> Running boot step rabbit_node_monitor defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.259498+00:00 [info] <0.647.0> Starting rabbit_node_monitor (in ignore mode)
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.259623+00:00 [info] <0.230.0> Running boot step delegate_sup defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.260019+00:00 [info] <0.230.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.260176+00:00 [info] <0.230.0> Running boot step rabbit_fifo_dlx_sup defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.260260+00:00 [info] <0.230.0> Running boot step core_initialized defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.260291+00:00 [info] <0.230.0> Running boot step upgrade_queues defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.266311+00:00 [info] <0.230.0> message_store upgrades: 1 to apply
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.266457+00:00 [info] <0.230.0> message_store upgrades: Applying rabbit_variable_queue:move_messages_to_vhost_store
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.266604+00:00 [info] <0.230.0> message_store upgrades: No durable queues found. Skipping message store migration
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.266670+00:00 [info] <0.230.0> message_store upgrades: Removing the old message store data
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.267517+00:00 [info] <0.230.0> message_store upgrades: All upgrades applied successfully
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276026+00:00 [info] <0.230.0> Running boot step channel_tracking defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276101+00:00 [info] <0.230.0> Running boot step rabbit_channel_tracking_handler defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276284+00:00 [info] <0.230.0> Running boot step connection_tracking defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276314+00:00 [info] <0.230.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276411+00:00 [info] <0.230.0> Running boot step rabbit_definitions_hashing defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276485+00:00 [info] <0.230.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276588+00:00 [info] <0.230.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276776+00:00 [info] <0.230.0> Running boot step rabbit_policies defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.276945+00:00 [info] <0.230.0> Running boot step rabbit_policy defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.278000+00:00 [info] <0.230.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.278173+00:00 [info] <0.230.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.278264+00:00 [info] <0.230.0> Running boot step rabbit_stream_coordinator defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.278486+00:00 [info] <0.230.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.278611+00:00 [info] <0.230.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.279449+00:00 [info] <0.230.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.279531+00:00 [info] <0.230.0> Management plugin: using rates mode 'basic'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.279956+00:00 [info] <0.230.0> Running boot step recovery defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.280957+00:00 [info] <0.230.0> Running boot step empty_db_check defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.281059+00:00 [info] <0.230.0> Will seed default virtual host and user...
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.281147+00:00 [info] <0.230.0> Adding vhost '/' (description: 'Default virtual host', tags: [])
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.303276+00:00 [info] <0.689.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@ad96121a9ade/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.305024+00:00 [info] <0.689.0> Setting segment_entry_count for vhost '/' with 0 queues to '2048'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.308734+00:00 [info] <0.689.0> Starting message stores for vhost '/'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.309094+00:00 [info] <0.694.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.310988+00:00 [info] <0.689.0> Started message store of type transient for vhost '/'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.311240+00:00 [info] <0.698.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.312333+00:00 [warning] <0.698.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.313259+00:00 [info] <0.689.0> Started message store of type persistent for vhost '/'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.313467+00:00 [info] <0.689.0> Recovering 0 queues of type rabbit_classic_queue took 8ms
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.313513+00:00 [info] <0.689.0> Recovering 0 queues of type rabbit_quorum_queue took 0ms
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.313556+00:00 [info] <0.689.0> Recovering 0 queues of type rabbit_stream_queue took 0ms
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.318140+00:00 [info] <0.230.0> Created user 'guest'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.320986+00:00 [info] <0.230.0> Successfully set user tags for user 'guest' to [administrator]
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.323916+00:00 [info] <0.230.0> Successfully set permissions for 'guest' in virtual host '/' to '.*', '.*', '.*'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324017+00:00 [info] <0.230.0> Running boot step rabbit_observer_cli defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324078+00:00 [info] <0.230.0> Running boot step rabbit_looking_glass defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324127+00:00 [info] <0.230.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324228+00:00 [info] <0.230.0> Running boot step background_gc defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324348+00:00 [info] <0.230.0> Running boot step routing_ready defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324387+00:00 [info] <0.230.0> Running boot step pre_flight defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324423+00:00 [info] <0.230.0> Running boot step notify_cluster defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324455+00:00 [info] <0.230.0> Running boot step networking defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324505+00:00 [info] <0.230.0> Running boot step definition_import_worker_pool defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324582+00:00 [info] <0.287.0> Starting worker pool 'definition_import_pool' with 6 processes in it
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324878+00:00 [info] <0.230.0> Running boot step cluster_name defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.324958+00:00 [info] <0.230.0> Initialising internal cluster ID to 'rabbitmq-cluster-id-NOfHQT7k4zPV0DiuUwp6RA'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.328016+00:00 [info] <0.230.0> Running boot step direct_client defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.328177+00:00 [info] <0.230.0> Running boot step rabbit_maintenance_mode_state defined by app rabbit
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.328230+00:00 [info] <0.230.0> Creating table rabbit_node_maintenance_states for maintenance mode status
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.332557+00:00 [info] <0.230.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.332696+00:00 [info] <0.738.0> Resetting node maintenance status
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.342572+00:00 [info] <0.797.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.342711+00:00 [info] <0.825.0> Statistics database started.
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.342767+00:00 [info] <0.824.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.349454+00:00 [info] <0.839.0> Prometheus metrics: HTTP (non-TLS) listener started on port 15692
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.349639+00:00 [info] <0.738.0> Ready to start client connection listeners
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.351579+00:00 [info] <0.883.0> started TCP listener on [::]:5672
+2025-10-01 01:09:16 rabbitmq-1       |  completed with 4 plugins.
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.463000+00:00 [info] <0.738.0> Server startup complete; 4 plugins started.
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.463000+00:00 [info] <0.738.0>  * rabbitmq_prometheus
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.463000+00:00 [info] <0.738.0>  * rabbitmq_management
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.463000+00:00 [info] <0.738.0>  * rabbitmq_management_agent
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.463000+00:00 [info] <0.738.0>  * rabbitmq_web_dispatch
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.533729+00:00 [info] <0.9.0> Time to start RabbitMQ: 7621346 us
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.550050+00:00 [info] <0.886.0> accepting AMQP connection <0.886.0> (172.19.0.5:40450 -> 172.19.0.2:5672)
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.553131+00:00 [info] <0.886.0> connection <0.886.0> (172.19.0.5:40450 -> 172.19.0.2:5672): user 'guest' authenticated and granted access to vhost '/'
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.553942+00:00 [info] <0.886.0> closing AMQP connection <0.886.0> (172.19.0.5:40450 -> 172.19.0.2:5672, vhost: '/', user: 'guest')
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.555669+00:00 [info] <0.896.0> accepting AMQP connection <0.896.0> (172.19.0.5:40456 -> 172.19.0.2:5672)
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.557706+00:00 [error] <0.896.0> Error on AMQP connection <0.896.0> (172.19.0.5:40456 -> 172.19.0.2:5672, user: 'guest', state: opening):
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.557706+00:00 [error] <0.896.0> vhost  not found
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.558392+00:00 [info] <0.896.0> closing AMQP connection <0.896.0> (172.19.0.5:40456 -> 172.19.0.2:5672, vhost: 'none', user: 'guest')
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.560475+00:00 [info] <0.904.0> accepting AMQP connection <0.904.0> (172.19.0.5:40472 -> 172.19.0.2:5672)
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.562679+00:00 [error] <0.904.0> Error on AMQP connection <0.904.0> (172.19.0.5:40472 -> 172.19.0.2:5672, user: 'guest', state: opening):
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.562679+00:00 [error] <0.904.0> vhost  not found
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.563322+00:00 [info] <0.904.0> closing AMQP connection <0.904.0> (172.19.0.5:40472 -> 172.19.0.2:5672, vhost: 'none', user: 'guest')
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.564976+00:00 [info] <0.912.0> accepting AMQP connection <0.912.0> (172.19.0.5:40482 -> 172.19.0.2:5672)
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.567402+00:00 [error] <0.912.0> Error on AMQP connection <0.912.0> (172.19.0.5:40482 -> 172.19.0.2:5672, user: 'guest', state: opening):
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.567402+00:00 [error] <0.912.0> vhost  not found
+2025-10-01 01:09:16 rabbitmq-1       | 2025-10-01 04:09:16.568158+00:00 [info] <0.912.0> closing AMQP connection <0.912.0> (172.19.0.5:40482 -> 172.19.0.2:5672, vhost: 'none', user: 'guest')
+2025-10-01 01:09:16 producer_once-1  | Broker not ready at rabbitmq:5672: ; retrying in 1.0s
+2025-10-01 01:09:16 producer_once-1  | Broker not ready at rabbitmq:5672: ; retrying in 1.0s
+2025-10-01 01:09:16 producer_once-1  | Broker not ready at rabbitmq:5672: ; retrying in 1.0s
+2025-10-01 01:09:16 producer_once-1  | Broker not ready at rabbitmq:5672: ; retrying in 1.0s
+2025-10-01 01:09:16 producer_once-1  | Broker not ready at rabbitmq:5672: ; retrying in 1.0s
+2025-10-01 01:09:16 producer_once-1  | Broker not ready at rabbitmq:5672: ; retrying in 1.0s
+2025-10-01 01:09:16 producer_once-1  | Broker not ready at rabbitmq:5672: ; retrying in 1.0s
+2025-10-01 01:09:16 producer_once-1  | Broker reachable at rabbitmq:5672
+2025-10-01 01:09:16 producer_once-1  | Enqueuing tasks...
+2025-10-01 01:09:16 producer_once-1  | Traceback (most recent call last):
+2025-10-01 01:09:16 producer_once-1  |   File "/app/producer.py", line 59, in <module>
+2025-10-01 01:09:16 producer_once-1  |     produce_samples()
+2025-10-01 01:09:16 producer_once-1  |   File "/app/producer.py", line 46, in produce_samples
+2025-10-01 01:09:16 producer_once-1  |     tasks.quick_task.send(f"quick-{i}")
+2025-10-01 01:09:16 producer_once-1  |   File "/usr/local/lib/python3.12/site-packages/dramatiq/actor.py", line 142, in send
+2025-10-01 01:09:16 producer_once-1  |     return self.send_with_options(args=args, kwargs=kwargs)
+2025-10-01 01:09:16 producer_once-1  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-01 01:09:16 producer_once-1  |   File "/usr/local/lib/python3.12/site-packages/dramatiq/actor.py", line 170, in send_with_options
+2025-10-01 01:09:16 producer_once-1  |     return self.broker.enqueue(message, delay=delay)
+2025-10-01 01:09:16 producer_once-1  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-10-01 01:09:16 producer_once-1  |   File "/usr/local/lib/python3.12/site-packages/dramatiq/brokers/rabbitmq.py", line 327, in enqueue
+2025-10-01 01:09:16 producer_once-1  |     self.declare_queue(canonical_queue_name, ensure=True)
+2025-10-01 01:09:16 producer_once-1  |   File "/usr/local/lib/python3.12/site-packages/dramatiq/brokers/rabbitmq.py", line 246, in declare_queue
+2025-10-01 01:09:16 producer_once-1  |     self._ensure_queue(queue_name)
+2025-10-01 01:09:16 producer_once-1  |   File "/usr/local/lib/python3.12/site-packages/dramatiq/brokers/rabbitmq.py", line 267, in _ensure_queue
+2025-10-01 01:09:16 producer_once-1  |     raise ConnectionClosed(e) from None
+2025-10-01 01:09:16 producer_once-1  | dramatiq.errors.ConnectionClosed: ConnectionClosedByBroker: (530) 'NOT_ALLOWED - vhost  not found'
+2036-01-01 00:00:00 
+2001-01-01 00:00:00 xited with code 1
